@@ -10,4 +10,7 @@ spring:
       initial-size: 3
   thymeleaf:
     cache: false
-
+accesstoken:
+  client_id: 11202852096058413a04
+  client_secret: 2dada7ed01263d806b600d81d0d8517d98c1c960
+  redirect_uri: http://localhost:8080/oauth/redirect
