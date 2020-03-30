@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    #使用druid数据库池
+    #druid的私有配置
+    druid:
+      username: root
+      url: jdbc:mysql://localhost:3306/mynode?userSSL=true&serverTimezone=Asia/Shanghai
+      password: zyusiuban123456
+      max-active: 10
+      initial-size: 3
+  thymeleaf:
+    cache: false
+
