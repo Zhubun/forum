@@ -4,13 +4,29 @@ spring:
     #druid的私有配置
     druid:
       username: root
-      url: jdbc:mysql://localhost:3306/mynode?userSSL=true&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://localhost:3306/forum?userSSL=false&serverTimezone=Asia/Shanghai
       password: zyusiuban123456
       max-active: 10
       initial-size: 3
   thymeleaf:
     cache: false
-accesstoken:
+github:
   client_id: 11202852096058413a04
   client_secret: 2dada7ed01263d806b600d81d0d8517d98c1c960
-  redirect_uri: http://localhost:8080/oauth/redirect
+  redirect_uri: http://localhost:8080/oauth/redirect/github
+ali:
+  appId: 2021001155628561
+  redirectUri: http://192.168.50.138:8080/oauth/redirect/ali
+  charset: UTF-8
+  privateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9Qgq4Z4MQuJFCCVXntb7/dtrxA7fn3dhcoB3pjaR7RnUM94Yv5jvmbIn6AHejfwUlFQsOlND6tDLp6LnznT0VIL9IG/Jv8BkxwBw2o9i0ytc+bNIzfsmknutrTS+7E+PJTraOUGhQw32VyyCFu3rrO2VqkAFSVxNdjy4d++XdycgRrxjyUX5Xvp19ZnrmVsrTzWDpMklaiotqVhCcVnlbFs9N944ndYi1Us2RquD+ogV1mryRCwdJPk8+umetM0MPusYMWT1Md+lOz2zJ+PLq4+2I78uqHAbfavUh12Lb51RUZOsqQzAMuhUKXz7tRBA18OMM7o5eIaqkbjqdCDFnAgMBAAECggEBAJNs3YL2By/ARk7FjOh5N/YyNKyn89sngcHtbD+heW4Z3VYjfqDTXPfKttRLBucSLATN1pYeMIgKVNrG0gtGAe3yW26lbn3p7wZFGvUpPsbedzsGc9tvOU4GCWbFcpftD3Sh3y0Oz6OSFMLZv1TNTRvuYbrXwF/OuqQXw5nRvia8D+WaCdolixlBzr3y90sLymXlS98Mroe9MJmvq+aKXoU3GWzj/C5CtqTHoxCutfqcCSLlc/rPIlzKAYjkCYcfJ0UHe6mAxk12Iv/1XYGEUltQqG6+cMKAW5kuPVezMxLA/Bk7Kn4SLZc6Lgzx8ODtdps95mdKSArWGXPRtFzobVECgYEA5Y5RaIg6U9DbJXG6Kbw0jhJhokgW6J0qVrubarJEsY4UFPV05mCo75wH9HUT/LTynQcpRP9a9/RIROkIPp6cED1NFwOqDYuwCAlG0+uaZ8MCPXUviQnCwKa8lL0Jh6A3FdBoHAVzTbkgtj+c6ASZxz91i+uCVGM7nxEY28UO9skCgYEA0w9S1xxxSsv8L5S36NnYPBhe1U8AD3x2mrHtUpiGmurTBqC2pCzC73ZxKlYiDGSX6nSEmS47lH6qZgwS5lohzhAW0UYM/Eg2dFbRKn9+e26NW9CfDRSxFE73gbnfvVOML1xCtsbV0CL3/ogBQitNaX0r1fQkfv7N5Lues/aajq8CgYBI5P+O7StwcDMW2d1e4Wfi8Y1VZgT4Sugl8J8yq3dK1q4j1aoQegNLS0XvZ7o4FhGwsZR2V4xAjq7gSwuWLvGp6n1vYHeAo6n7c06tfvRiHLe6Ylr87j+Mw6XAqaK8EbFMWQimVUi/Fpl/pgWiW8ulTM575wZU28oUAe7d4t6UmQKBgQCwVjYtOTtCdck+a694IUHze50H9NglGCTzvEJ+5qZXmmgzOmU+J5O6hCeqaopJ9mWiYjVC0gi/WVC+r8m+oYFq67BUqoVA5ohwjPR24ExpjgUWt+ebAzWrtQo/XW+ce8g87YVjth5/pieyhikfApTL1OOh/zfazsJxH3xJ+XhKSwKBgBiaBsDZlhqa8uV+My7weiyFmc+KrjI5ZLjbN+7OK9DCHHT8DnXZDeC/BHGwSVrfSa7e1B7d/sPyyY1ufI4G8qCgeQTqb1cIwE5VHfswqDP/E6kx4j+2nANbqyUIqpxyzdIdm7B+o0l/+r2rGF2iyPjO3fF8dGlLvs6UCCYMsNpC
+  alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj1NSIISbQmaHO4+NPqflaWMbfjvWGCA41Z26uO7/iM/lHnWByA6Z02obJGkNZ1H+NzDmHkb/JPR0bqv5XBUpdG1jpncTQZmZ+BOwJYT1jk5KLbAAcG1QCvtf+jdKk9n3FMXTwkfKbp5XZqjYAwMOUVNmjcLsgJKpCKeS6ST58DQa1XhsypDFxjq6H8zMzL4dT4wRQw2/H8Ezdbwf2157or7CcZYO6EPfYlrvNDMOD0fagwJ6bhp+V2ghyPX6C54WVFD7+UnzBh2TDKYdYProMiqphWrjGXuwgcj/mgDEmd+371KNLKJubqGElhPX3ghpEeWcT3KzdfYR4pEajRonZQIDAQAB
+  serverUrl: https://openapi.alipay.com/gateway.do
+  format: json
+  signType: RSA2
+server:
+  port: 8080
+mybatis:
+  type-aliases-package: com.zhubun.vo.dao
+#  config-location: classpath:mapper/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
